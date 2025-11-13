@@ -1,0 +1,199 @@
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+using namespace std;
+//															  Гипотенуза
+//int main() {
+//	int a, b;
+//	cin >> a >> b;
+//	int c = sqrt(a * a + b * b);
+//	cout << c;
+//}
+//													  Следующее и предыдущее
+//int main() {
+//	int n;
+//	cin >> n;
+//	cout << "The next number for the number " 
+// << n << " is " << n + 1 << "." << endl;
+//	cout << "The previous number for the number " 
+// << n << " is " << n - 1 << "." << endl;
+//}
+//														  Дележ яблок - 1
+// int main() {
+//int n, k;
+//cin >> n >> k;
+//cout << k / n;
+//}
+//														  Дележ яблок - 2
+// int main() {
+//int n, k;
+//cin >> n >> k;
+//cout << k % n;
+//}
+//															    МКАД
+//int main() {
+//	const int S = 109;
+//	int v, t, n;
+//	cin >> v >> t;
+//	n = (v * t) % 109;
+//	if (n < 0) {
+//		n += 109;
+//	}
+//	cout << n;
+//	}
+//														   Последняя цифра
+//int main() {
+//int n;
+//cin >> n;
+//cout << n % 10;
+//}
+//												Число десятков двузначного числа
+////int main() {
+////	int a, b;
+////	cin >> a >> b;
+////	a = a + b;
+////	b = a - b;
+////	a = a - b;
+////	cout << a << " " << b;
+////}
+//                               Число десятков
+//int main() {
+//	unsigned int n;
+//	cin >> n;
+//	cout << n % 100 / 10;
+//}
+//														    Сумма цифр
+//int n;
+//cin >> n;
+//cout << n / 100 + (n % 100 / 10) + (n % 10);
+//}
+//													  Следующее четное
+// int main() {
+//int n;
+//cin >> n;
+//cout << n - (n % 2) + 2;
+//}
+//													Электронные часы - 1
+// int main() {
+//int n, h, m;
+//cin >> n;
+//h = n % 1440 / 60;
+//m = n % 60;
+//cout << h << " " << m;
+//}
+//                          Электронные часы - 2
+//int main() {
+//	int n, h, m, s;
+//	cin >> n;
+//	h = n / 3600 % 24;
+//	m = n % 3600 / 60;
+//	s = n % 3600 % 60;
+//	cout << h << ":" << setw(2) << setfill('0') << m << ":" << setw(2) << setfill('0') << s;
+//}
+// Способ 2:
+//int main() {
+//    int n;
+//    cin >> n;
+//
+//    // Общее количество секунд в сутках = 86400
+//    n %= 86400;  // чтобы не выйти за пределы суток
+//
+//    int hours = n / 3600;
+//    int minutes = (n % 3600) / 60;
+//    int seconds = n % 60;
+//
+//    cout << hours << ":"
+//        << setw(2) << setfill('0') << minutes << ":"
+//        << setw(2) << setfill('0') << seconds << endl;
+//
+//    return 0;
+//}
+//                            Обмен значений
+//int main() {
+	int a, b;
+	cin >> a >> b;
+	a = a + b;
+	b = a - b;
+	a = a - b;
+	cout << a << " " << b;
+}
+//                            Конец уроков
+//int main() {
+//	const int START_TIME = 9 * 60; // 540
+//
+//	int n, k;
+//	cin >> n; // номер урока
+//
+//	k = n - 1; // кол-во перемен
+//	int c, nc; // c - чётные перемены, nc - нечётные перемены
+//	int k_c = k / 2; // кол-во чётных перемен
+//	int k_nc = n / 2; // кол-во нечётных перемен
+//	c = k_c * 15; // время чётных перемен
+//	nc = k_nc * 5; // время нечётных перемен
+//
+//	int total_peremen = c + nc; // время всех перемен
+//
+//	int time_lessons = n * 45; // время всех уроков
+//
+//	int total_hours = (START_TIME + time_lessons + total_peremen) / 60; // всего часов
+//
+//	int total_minutes = (START_TIME + time_lessons + total_peremen) % 60; // всего минут
+//	cout << total_hours << " " << setw(2) << setfill('0') << total_minutes;
+//                          Стоимость покупки
+//int main() {
+//	int a, b, n;
+//	cin >> a >> b >> n;
+//	int total_sum = (a * 100 + b) * n;
+//	int cop = total_sum % 100;
+//	int rubl = total_sum / 100;
+//	cout << rubl << " " << cop;
+//}
+// 2 способ:
+//int a, b, n;
+//cin >> a >> b >> n;
+//
+//int cop = b * n % 100;
+//int rubl = a * n + (b * n) / 100;
+//cout << rubl << " " << cop;
+//                          Разность времен
+//int main() {
+//	int h1, m1, s1, h2, m2, s2;
+//	cin >> h1 >> m1 >> s1 >> h2 >> m2 >> s2;
+//	int total_time1 = h1 * 3600 + m1 * 60 + s1;
+//	int total_time2 = h2 * 3600 + m2 * 60 + s2;
+//	int seconds_between_time = total_time2 - total_time1;
+//	cout << seconds_between_time;
+//}
+//                            Автопробег
+//int main() {
+//	int n, m;
+//	cin >> n >> m;
+//	m = (m + n - 1) / n;
+//	cout << m;
+//}
+//                          Дележ яблок - 3
+//int main() {
+//	int n, k;
+//	cin >> n >> k;
+//	int count = (n - (k % n)) % n;
+//	cout << count;
+//}
+//                            Улитка
+//int main()
+//{
+//	double h, a, b, n;
+//	cin >> h >> a >> b;
+//	// 10 3 2 -> 8
+//	n = ceil((h - a) / (a - b)) + 1;
+//	cout << n;
+//	// 20 7 3 -> 5
+//}// округлить ((20-7) / (7-3)) + 1
+//                          Максимум
+//int main(){
+//	int a, b;
+//	cin >> a >> b;
+//	int k = (a * (a / b) + b * (b / a)) / (b / a + a / b);
+//	// k = (5 * (5 / 8) + 8 * (8 / 5 )) / (8/5 + 5 /8)
+//	cout << k;
+//	}
+
