@@ -1,0 +1,327 @@
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+using namespace std;
+
+//                  Максимум из двух чисел
+/*
+int main() {
+int a, b;
+cin >> a >> b;
+if (a - b < 0)
+  {
+		cout << b;
+	}
+	else 
+	{
+		cout << a;
+	}
+// 5 3 -> 5
+//3 5 -> 5
+}
+*/
+
+//                    Високосный год
+/*int main() {
+int n;
+cin >> n;
+if ((n % 4 == 0  && n % 100 != 0)||(n % 400 == 0))
+	{
+		cout << "YES";
+	}
+	else 
+	{
+		cout << "NO";
+	}
+}*/
+
+//                 Тестирующая система
+/*
+int main() {
+int s, c;
+cin >> s >> c;
+if (s != 1 && c != 1 || s==1 && c == 1)
+	{
+		cout << "YES";
+	}
+	else
+	{
+		cout << "NO";
+	}
+}
+*/
+
+//                    Знак числа
+//int main() {
+//	int x;
+//	cin >> x;
+//	if (x > 0)
+//	{
+//		cout << 1;
+//	}
+//	if (x < 0)
+//	{
+//		cout << -1;
+//	}
+//	if (x == 0)
+//	{
+//		cout << 0;
+//	}
+//}
+//              Какое из чисел больше?
+// int main()
+//{
+//	int n1, n2;
+//	cin >> n1 >> n2;
+//	if (n1 > n2)
+//	{
+//		cout << 1;
+//	}
+//	else if (n1 < n2)
+//	{
+//		cout << 2;
+//	}
+//	else
+//	{
+//		cout << 0;
+//	}
+//}
+//                Максимум из трех
+//int main()
+//{
+//	int n1, n2, n3;
+//	cin >> n1 >> n2 >> n3;
+//	if (n1 >= n2 && n1 >= n3)
+//	{
+//		cout << n1;
+//	}
+//	else if (n2 >= n1 && n2 >= n3)
+//	{
+//		cout << n2;
+//	}
+//	else
+//	{
+//		cout << n3;
+//	}
+//}
+
+//														Ладья
+/*
+int x1, y1, x2, y2;
+cin >> x1 >> y1 >> x2 >> y2;
+if (x1 == x2 || y1 == y2)
+{
+	cout << "YES";
+}
+else
+{
+	cout << "NO";
+}
+*/
+//                            Слон:
+/*
+int x1, y1, x2, y2;
+	cin >> x1 >> y1 >> x2 >> y2;
+	if (abs(x2-x1)==abs(y2-y1))
+	{
+		cout << "YES";
+	}
+	else
+	{
+		cout << "NO";
+	}
+*/
+//int main() {
+//	int k;
+//	cin >> k;
+//	if (floor(sqrt(k))==sqrt(k))
+//		{
+//			cout << "YES";
+//		}
+//	else
+//		{
+//		cout << "NO";
+//		}
+//}
+//int main()
+//{
+//	// ax + b = 0
+//	double x, a, b;;
+//	cin >> a >> b;
+//	
+//	if (a == 0)
+//	{
+//		cout << "INF";
+//	}
+//	else
+//	{
+//		x = (- b / a);
+//		if (x == (int)x)
+//		{
+//		cout << x;
+//		}
+//		else
+//		{
+//		cout << "NO";
+//		}
+//	}
+//   
+//}
+//int main()
+//{
+//	int a, b, c;
+//	cin >> a >> b >> c;
+//	if ((a + b) > c && (b + c) > a && (a + c) > b)
+//	{
+//		cout << "YES";
+//	}
+//	else
+//	{
+//		cout << "NO";
+//	}
+//}
+//int main() {
+//	int a, b, c;
+//	cin >> a >> b >> c;
+//	int count = 0;
+//	if(a==b && b == c)
+//	{
+//		count = 3;
+//	}
+//	if ((a == c && b != c) || (a == b && b != c) || (b == c && a != b))
+//	{
+//		count = 2;
+//	}
+//	else
+//	{
+//		count = 0;
+//	}
+//	cout << count;
+//
+//}
+//int main()
+//{
+//	int x1, y1, x2, y2;
+//	cin >> x1 >> y1 >> x2 >> y2;
+//
+//	if ((x1 > 0 && x2 > 0 && y1 > 0 && y2 > 0) || (x1 < 0 && x2 < 0 && y1 > 0 && y2 > 0) || (x1 < 0 && x2 < 0 && y1 < 0 && y2 < 0) || (x1 > 0 && x2 > 0 && y1 < 0 && y2 < 0))
+//	{
+//		cout << "YES";
+//	}
+//	else
+//	{
+//		cout << "NO";
+//	}
+//}
+//																 COWS
+//int main() {
+//	int n;
+//	cin >> n;
+//	if (n < 100)
+//	{
+//		if (n % 10 == 1 && n!=11)
+//		{
+//			cout << n << " korova";
+//		}
+//		else if ((n % 10 == 2 || n % 10 == 3 || n % 10 == 4)&&(n<12 || n>14))
+//		{
+//			cout << n << " korovy";
+//		}
+//		else
+//		{
+//			cout << n << " korov";
+//		}
+//	}
+//
+//
+//																TICKETS
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	if (n)
+//}
+//																BOCHKI
+//int main() {
+//	int n;
+//	cin >> n;
+//	if (n <= 1000)
+//	{
+//		int b = n % 100;
+//		if (b % 10 == 1 && b != 11)
+//		{
+//			cout << n << " bochka";
+//		}
+//		else if ((b % 10 == 2 || b % 10 == 3 || b % 10 == 4) && (b < 12 || b>14))
+//		{
+//			cout << n << " bochki";
+//		}
+//		else
+//		{
+//			cout << n << " bochek";
+//		}
+//	}
+//}
+//															CHET AND NECHET
+
+//int main() {
+//	int a, b, c;
+//	cin >> a >> b >> c;
+//	if ((a % 2 == 0 || b % 2 == 0 || c % 2 == 0) && (a % 2 != 0 || b % 2 != 0 || c % 2 != 0))
+//	{
+//		cout << "YES";
+//	}
+//	else
+//	{
+//		cout << "NO";
+//	}
+//}
+
+//int main()
+//{
+//	int a, b, c;
+//	cin >> a >> b >> c;
+//
+//	int n = 0;
+//
+//	if (a >= b && a >= c)
+//	{
+//		n = c;
+//		c = a;
+//		a = n;
+//	}
+//	if (b > a && b > c)
+//	{
+//		n = c;
+//		c = b;
+//		b = a;
+//		a = n;
+//	}
+//	if (a > b)
+//	{
+//		n = a;
+//		a = b;
+//		b = n;
+//	}
+//	cout << a << ' ' << b << ' ' << c;
+//
+//}
+//int main()
+//{
+//	char s1, s2, s3, s4, s5;
+//	cin >> s1 >> s2 >> s3 >> s4 >> s5;
+//	cout << s5 << " " << s4 << " " << s3 << " " << s2 << " " << s1;
+//}
+//#include <iostream>
+//using namespace std;
+//
+//int main() {
+//	int n, m, k;
+//	cin >> k >> m >> n;
+//	int kol = n / k;
+//	if (n % k != 0)
+//	{
+//		kol += 1;
+//	}
+//	cout << kol*2*m;
+//}
